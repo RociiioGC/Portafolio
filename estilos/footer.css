@@ -1,0 +1,88 @@
+footer {
+    background-color: #ada7f8;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;    
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
+
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #5d5d60;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: liberation-serif, serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0 10px;
+}
+
+footer nav ul li a:hover {
+    color: white;
+}
+
+.contacto-links a {
+    margin-top: 20px;
+    margin-top: 10px; 
+    text-decoration: none;
+}
+
+.contacto-links a i {
+    margin: 0 10px;
+    color: #5d5d60;
+    font-size: 2rem;
+}
+
+footer .contacto-links a i {
+    font-size: 2.5em; 
+    color: #5d5d60; 
+    margin: 0 10px; 
+    transition: color 0.3s ease; 
+}
+
+footer .contacto-links a:hover i { 
+    color: white; 
+}
+
+@media (max-width: 767px) {
+    footer {
+        padding: 15px; /* Adjust padding for mobile */
+    }
+
+    footer nav ul {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        margin: 5px 0; 
+    }
+
+    footer nav ul li {
+        margin: 5px 0; /* reduce el margen entre items */
+    }
+
+    footer nav ul li a {
+        padding: 6px 12px; 
+        font-size: 0.9rem; 
+    }
+
+    .contacto-links a i {
+        font-size: 1.8rem; 
+        margin: 5px; 
+    }
+
+    footer .contacto-links a i {
+        font-size: 2rem; 
+        margin: 5px; /
+    }
+}

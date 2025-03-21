@@ -1,0 +1,108 @@
+#contacto {
+    padding: 50px;
+    text-align: center;
+    display: flex; 
+    align-items: flex-start; /* alinea la card al borde superior */
+    justify-content: center; 
+    position: relative; 
+    min-height: 500px;
+}
+
+.contacto-grid {
+    display: flex; /* utiliza flexbox para la tarjeta y la imagen dentro de contacto */
+    align-items: center; /* centra verticalmente los elementos */
+    gap: 10px; 
+}
+
+.contactame { 
+    background-color: #b3b3b818;
+    border: 2px solid #dddfe5; 
+    border-radius: 20px;
+    text-align: center;
+    width: fit-content;
+    padding: 30px;
+    box-sizing: border-box; 
+}
+
+.contacto-imagen{
+    flex: 1;
+    text-align: center;
+}
+
+.contacto-imagen img{
+    max-width: 100%; 
+    height: auto;
+    width: 400px;  
+    height: 400px; 
+    object-fit: contain;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form input,
+form textarea,
+form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: hotpink; 
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+form button:hover {
+    background-color: rgb(251, 128, 190); 
+}
+
+
+@media (max-width: 767px) {
+    #contacto {
+        padding: 20px; 
+        min-height: auto; 
+    }
+
+    .contacto-grid {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        align-items: center; 
+        gap: 20px; 
+    }
+
+    .contactame {
+        width: 50%; /* hace que la tarjeta de contacto ocupe la mitad del espacio*/
+        padding: 20px; 
+    }
+
+    .contacto-imagen img {
+        width: 100%;
+        height: auto;
+        max-width: 300px; 
+        max-height: 300px; 
+    }
+
+    form {
+        max-width: 90%; 
+    }
+
+    form input,
+    form textarea,
+    form button {
+        padding: 8px; 
+        font-size: 0.9rem; 
+    }
+}

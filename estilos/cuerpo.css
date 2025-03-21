@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: #5d5d60;
+    font-family: "liberation-serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+  font-size: 1.8rem;   
+  color: #5d5d60;
+  font-family: liberation-serif, serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.seccion {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.columna-contenido {
+    width: 100%;
+    max-width: 1100px;
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 16px; 
+    }
+
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+    h2 {
+        font-size: 1.5rem; 
+    }
+
+    .seccion {
+        padding: 20px; 
+    }
+
+    .columna-contenido {
+        max-width: 100%; 
+    }
+}
